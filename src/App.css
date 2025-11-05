@@ -32,6 +32,11 @@ p {
   font-size: 1.5rem;
 
 }
+.pc{
+  font-size: 1.5rem;
+
+
+}
 
 /* Homepage specific styles */
 
@@ -60,6 +65,43 @@ p {
   width: 50%;
 }
 
+
+.sag{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: center;
+}
+
+.sol{
+  width: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: center;
+}
+
+.ana {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+}
+
+.sag img{
+    width: 50%;
+
+}
+
+.sol h1{
+  color: #000;
+  margin: -50px 0 1rem 0; /* move up and add space below */
+  margin-bottom: 10%;
+  font-size: 5.1rem;
+  position: absolute;
+  top: 30%;
+  font-family: 'Poppins', Bold italic;
+}
 
 /* Fixed navigation at the very top */
 nav {

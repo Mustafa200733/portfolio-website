@@ -1,125 +1,27 @@
 /* Clean, consistent app styles: fixed nav at top and H1 below it */
-.home-container h1 {
-  color: #000;
-  margin: -50px 0 1rem 0; /* move up and add space below */
-  margin-bottom: 10%;
-  font-size: 5.1rem;
-  position: absolute;
-  top: 30%;
-  font-family: 'Poppins', Bold italic;
-}
 nav {
   border-style: ridge;
   font-family: "Tenor Sans", sans-serif;
   height: 5%;
 }
 
-.OnderAfbeelding {
-  bottom: 0;
-  width: 98vw;
-  height: 199vh;
-  object-fit: contain;
-}
 
-.TextNavbar {
-  font-weight: bold;
-  position: absolute;
-  top: 45%;
-}
-
-p {
-  color: #000;
-  font-size: 1.5rem;
-
-}
-.pc{
-  font-size: 1.5rem;
-
-
-}
-
-/* Homepage specific styles */
-
-.home-container {
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-}
-
-.info-content {
-  width: 50%;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: center;
-}
-
-.image-content {
-   width: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.image-content img {
-  width: 50%;
-}
-
-
-.sag{
-   width: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   justify-content: center;
-}
-
-.sol{
-  width: 50%;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: center;
-}
-
-.ana {
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-}
-
-.sag img{
-    width: 50%;
-
-}
-
-.sol h1{
-  color: #000;
-  margin: -50px 0 1rem 0; /* move up and add space below */
-  margin-bottom: 10%;
-  font-size: 5.1rem;
-  position: absolute;
-  top: 30%;
-  font-family: 'Poppins', Bold italic;
-}
-
-/* Fixed navigation at the very top */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between; /* title left, links right */
+  justify-content: space-between; 
   align-items: center;
-  padding: 0.5rem 1rem; /* controls nav height */
-  background: inherit; /* change if you want a visible background */
+  padding: 0.5rem 1rem; 
+  background: inherit; 
   z-index: 1000;
 }
 
 nav ul {
   display: flex;
-  gap: 1rem; /* space between links */
+  gap: 1rem; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -136,9 +38,121 @@ nav a {
   padding: 0.25rem 0.5rem;
 }
 
-.right {
+
+.TextNavbar {
+  font-weight: bold;
+  position: absolute;
+  top: 45%;
+}
+
+
+.page-container {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+}
+.info-content h1 {
+  color: #000;
+  margin: -50px 0 1rem 0; /* move up and add space below */
+  margin-bottom: 10%;
+  font-size: 5.1rem;
+  position: absolute;
+  top: 20%;
+}
+
+
+.home-container {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+}
+
+.OnderAfbeelding {
+  bottom: 0;
+  width: 99vw;
+  height: 78vh;
+  object-fit: contain;
+}
+
+
+
+.info-content p {
+    color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+    width: 88%;
+
+}
+
+
+
+.info-content  {
+  width: 54%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+}
+
+.image-content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 50%;
+}
+
+.sag {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
 }
-.footer {
+
+.sol {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+}
+
+
+
+
+.ana {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+}
+
+.sag img {
+  width: 50%;
+}
+
+.sol h1 {
+  color: #000;
+  margin: -50px 0 1rem 0; 
+  margin-bottom: 10%;
+  font-size: 5.1rem;
   position: absolute;
+  top: 11%;
+  width: 45%;
+}
+
+.sol p{
+    color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 82%;
 }

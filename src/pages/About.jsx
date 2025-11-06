@@ -72,7 +72,7 @@ function About() {
             </a>
           </li>
           <li>
-            <a href="/CV.png" download>
+            <a href="/sc.png" download>
               Download mijn CV
             </a>
           </li>

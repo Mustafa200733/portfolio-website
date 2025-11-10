@@ -20,7 +20,7 @@ const Home = () => {
           <img src="/Mustafa.jpg" alt="" />
         </section>
       </section>
-      <Footer image="/public/Onderimg.png" />
+      <Footer image="/public/home-banner.png" />
     </div>
   );
 };

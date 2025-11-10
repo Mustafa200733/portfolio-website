@@ -1,11 +1,3 @@
-/* Clean, consistent app styles: fixed nav at top and H1 below it */
-nav {
-  border-style: ridge;
-  font-family: "Tenor Sans", sans-serif;
-  height: 5%;
-}
-
-
 nav {
   position: fixed;
   top: 0;
@@ -17,6 +9,10 @@ nav {
   padding: 0.5rem 1rem; 
   background: inherit; 
   z-index: 1000;
+  background-color: white;
+    border-style: ridge;
+  font-family: "Tenor Sans", sans-serif;
+  height: 5%;
 }
 
 nav ul {
@@ -62,23 +58,21 @@ nav a {
   margin: -50px 0 1rem 0; /* move up and add space below */
   margin-bottom: 10%;
   font-size: 5.1rem;
-  position: absolute;
   top: 20%;
+  margin-top: 20px;
 }
 
 
 .home-container {
-  height: 90vh;
   width: 100vw;
   display: flex;
 }
 
 .OnderAfbeelding {
-  bottom: 0;
-  width: 99vw;
-  height: 78vh;
-  object-fit: contain;
-}
+  width: 100vw;       /* Gebruik 100vw zodat het echt de volledige breedte beslaat */
+  max-width: 100%;    /* Voorkomt horizontale scrollbars */
+  height: 50vh;       /* Hoogte blijft de helft van het scherm */
+ }
 
 
 
@@ -87,6 +81,7 @@ nav a {
   font-size: 1.5rem;
   font-weight: bold;
     width: 88%;
+    padding: 20px;
 
 }
 
@@ -97,7 +92,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: center;
+  flex-direction: column;
 }
 
 .image-content {
@@ -155,4 +150,46 @@ nav a {
   font-size: 1.5rem;
   font-weight: bold;
   width: 82%;
+}
+
+
+.ulab{
+  gap: 2rem; 
+  list-style: none;
+  align-items: center;
+    display: flex;
+
+}
+.pgit{
+  color: blue;
+    font-size: 2.1rem;
+
+}
+
+.pli{
+  color: grey;
+    font-size: 2.1rem;
+
+}
+.po{
+  color: green;
+  font-size: 2.1rem;
+}
+
+.h2ab{
+ color: black;
+  font-size: 4.1rem;
+  padding: 20px;
+}
+
+.vaardig{
+  color: black;
+  font-size: 4.1rem;
+  padding: 20px;
+  
+}
+.vaardigheden{
+   color: black;
+  font-size: 2.1rem;
+
 }

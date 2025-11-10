@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Footer from "../Components/Footer";
-import skills from "../Data/skills";
+import skillsData from "../Data/skills";
 
 function About() {
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const [skills, setSkills] = useState(skillsData);
 
   return (
     <div className="page-container">
@@ -26,7 +27,7 @@ function About() {
       </section>
 
       <section className="vaardigheden">
-        <h2>Mijn vaardigheden</h2>
+        <h2 className="vaardig">Mijn vaardigheden</h2>
 
         <div className="skills-list">
           {skills.map((skill) => (
@@ -51,15 +52,15 @@ function About() {
       </section>
 
       <section className="contact">
-        <h2>Contact & Links</h2>
-        <ul>
+        <h2 className="h2ab">Contact & Links</h2>
+        <ul className="ulab">
           <li>
             <a
               href="https://github.com/users/Mustafa200733/projects/1/views/1?pane=issue&itemId=136254815&issue=Mustafa200733%7Cportfolio-website%7C11"
               target="_blank"
               rel="noreferrer"
             >
-              GitHub
+             <p className="pgit"> GitHub</p>
             </a>
           </li>
           <li>
@@ -68,18 +69,18 @@ function About() {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+             <p className="pli"> LinkedIn </p>
             </a>
           </li>
           <li>
             <a href="/sc.png" download>
-              Download mijn CV
+             <p className="po"> Download mijn CV</p>
             </a>
           </li>
         </ul>
       </section>
 
-      <Footer image="/public/Onderimg.png" />
+      <Footer image="/public/Overmij.png" />
     </div>
   );
 }

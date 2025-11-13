@@ -11,18 +11,17 @@ const Home = () => {
           <h1>Contact</h1>
       <br />
 
-              <img src="public/mail.png" alt="" />
-                                <img className="imgtoets"src="public/toetsenbord.png" alt="" />
-
+<img src="mail.png" alt="" />
        <p>Email <br />
-       
      Mokur4201@gmail.com</p>
-     
+     <p className="ctnp">Voor meer contact info↓</p>
+
 <img src="public/tel.png" alt="" />
 <p>Telefoon
   <br />
   0610451897
 </p>
+
 <img src="public/linkednl.png" alt="" />
 <p>Linkedln <br />
 https://www.linkedin.com/in/mustafa-okur-aab40438a/</p>
@@ -33,6 +32,8 @@ https://www.linkedin.com/in/mustafa-okur-aab40438a/</p>
         <section className="contact-image">
         </section>
       </section>
+      <img className="imgtoets"src="public/toetsenbord.png" alt="" />
+
       <Footer image="/public/Contact.png" />
     </div>
   );

@@ -2,10 +2,10 @@ const ProjectCard = ({project, onShowDetail}) => {
     return ( 
         <section>
             <h2  className="h2pronam">{project.name}</h2>
-            <img className="img" src={project.image}/>
+            <img className="ima3e" src={project.image}/>
            <br />
            
-            <button  onClick={() => onShowDetail(project.id)}>
+            <button className="bttn2"  onClick={() => onShowDetail(project.id)}>
         Meer info
       </button>
         </section>

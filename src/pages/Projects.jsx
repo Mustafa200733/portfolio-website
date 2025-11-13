@@ -25,7 +25,7 @@ const Projects = () => {
         ))}
       </section>
 
-      <Footer image="/public/home-banner.png" />
+      <Footer image="/public/Project.png" />
     </>
   );
 };

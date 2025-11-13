@@ -15,7 +15,7 @@ const ProjectDetail = () => {
     return (
       <div>
         <button onClick={() => navigate(-1)}>Terug</button>
-        <p>Project niet gevonden!</p>
+        <p >Project niet gevonden!</p>
       </div>
     );
   }
@@ -28,13 +28,13 @@ const ProjectDetail = () => {
       <br />
       <br />
       
-  <button onClick={() => navigate(-1)}>
+  <button className='btntr' onClick={() => navigate(-1)}>
         ← Terug
       </button>
       
-      <h2>{project.name}</h2>
+      <h2 className='h2p'>{project.name}</h2>
       <p>{project.description}</p>
-        <img src={project.image} alt="" />          
+        <img className='alleim' src={project.image} alt="" />          
 
             <Footer image="/public/Project.png" />
 

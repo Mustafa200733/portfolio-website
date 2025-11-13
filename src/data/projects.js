@@ -9,8 +9,8 @@ const projects = [
 
     {
   id: 2,
-  name: "Bread Company.",
-  description: ".Dit is de homepage van mijn Bread Company die ik heb gecodeerd ",
+  name: "Bread Company",
+  description: "Dit is de homepage van mijn Bread Company die ik heb gecodeerd ",
   image:"/public/Breadcompany.png",
 
   },
@@ -18,7 +18,7 @@ const projects = [
     {
   id: 3,
   name: "Fitness App",
-  description: ".Dit is een fitnness app die ik vorig jaar heb gedisigned",
+  description: "Dit is een fitnness app die ik vorig jaar heb gedisigned",
   image:"/public/fitness.png",
   },
   ];

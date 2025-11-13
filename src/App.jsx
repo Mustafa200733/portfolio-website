@@ -4,8 +4,6 @@ import Navbar from './pages/Navbar';
 import About from './pages/About';
 import ProjectDetail from './pages/ProjectDetail';
 import Contact from './pages/Contact';
-
-
 import "./App.css";
 import Projects from './pages/Projects';
 

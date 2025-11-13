@@ -1,17 +1,25 @@
 const projects = [
   {
-  name: "Escape room.",
-    description: "Dit is de homepage van mijn Escape room die ik heb gecodeerd in de 1ste jaar.",
+  id: 1,  
+  name: "Escape room",
+  description: "Dit is de homepage van mijn Escape room die ik heb gecodeerd in de 1ste jaar.",
+  image:"/public/escaperoom.png",
+
   },
 
     {
+  id: 2,
   name: "Bread Company.",
-    description: ".Dit is de homepage van mijn Bread Company die ik heb gecodeerd. ",
+  description: ".Dit is de homepage van mijn Bread Company die ik heb gecodeerd ",
+  image:"/public/Breadcompany.png",
+
   },
 
     {
-  name: "Fitness App.",
-    description: ".Dit is een fitnness app die ik vorig jaar heb gedisigned",
+  id: 3,
+  name: "Fitness App",
+  description: ".Dit is een fitnness app die ik vorig jaar heb gedisigned",
+  image:"/public/fitness.png",
   },
   ];
   

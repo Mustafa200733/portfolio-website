@@ -86,6 +86,14 @@ nav a {
 }
 
 
+.h2sa{
+    color: #000;
+    font-size: 4.5rem;
+    top: 35%;
+    width: 45%;
+    padding: 20px;
+    position: absolute;
+}
 
 .info-content  {
   width: 54%;
@@ -145,6 +153,7 @@ nav a {
   width: 45%;
 }
 
+
 .sol p{
     color: #000;
   font-size: 1.5rem;
@@ -202,6 +211,64 @@ nav a {
     padding: 20px;
 }
 .imgtoets{
-  width: 25%;
-  float: right;
+width: 35%;
+float: right;
+
+}
+
+.imgfit{
+    width: 35%;
+
+}
+
+
+  section.projects-container {
+  display: flex;                /* Zet alles naast elkaar */
+  justify-content: center;      /* Centreer alles horizontaal */
+  align-items: flex-start;      /* Begin alle items bovenaan uitgelijnd */
+  gap: 2rem;                    /* Ruimte tussen de kaarten */
+  padding: 2rem;                /* Ruimte rondom de sectie */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ===== Styling voor individuele projectkaarten ===== */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;                 /* Elke kaart 300px breed */
+  background-color: #f9f9f9;    /* Lichte achtergrond */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Afbeeldingen in de kaart ===== */
+.project-card img {
+  width: 100%;                  /* Volledige breedte van de kaart */
+  height: 200px;                /* Vast hoogteformaat */
+  object-fit: cover;            /* Snijdt afbeelding netjes bij */
+}
+
+/* ===== Tekst in de kaart ===== */
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.h2pronam{
+  padding: 25px;
 }

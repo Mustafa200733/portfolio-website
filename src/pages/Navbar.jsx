@@ -13,8 +13,7 @@ const Navbar = () => {
         </ul>
       </nav>
       
-      
-
+    
       <Outlet />
     </>
   );

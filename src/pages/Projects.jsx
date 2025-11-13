@@ -1,25 +1,32 @@
 import React, { useState } from "react";
 import skills from "../Data/skills.js";
 import { useNavigate } from "react-router";
+import Footer from "../Components/Footer.jsx";
+import projects from "../data/projects.js";
+import ProjectCard from "../Components/ProjectCard";
 
 const Projects = () => {
   const navigate = useNavigate();
-  const [ProjectList, setProjectList] = useState([]); // initialize with empty array to avoid .map() errors
+  const [ProjectList, setProjectList] = useState(projects);
 
-  const goToDetail = (ProjectId) => {
-    navigate(`/Project/${ProjectId}`);
+  const goToDetail = (id) => {
+    navigate(`/project/${id}`);
   };
 
   return (
-    <section>
-      {ProjectList.map((project) => (
-        <Card
-          key={project.id} // lowercase 'project', not 'Project'
-          Project={project}
-          onShowDetail={goToDetail}
-        />
-      ))}
-    </section>
+    <>
+      <section className="projects-container">
+        {ProjectList.map((project) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            onShowDetail={goToDetail}
+          />
+        ))}
+      </section>
+
+      <Footer image="/public/home-banner.png" />
+    </>
   );
 };
 

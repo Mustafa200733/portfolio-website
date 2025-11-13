@@ -11,6 +11,7 @@ function About() {
       <section className="ana">
         <section className="sol">
           <h1>Over mij</h1>
+          
           <p>
             Hallo, ik ben Mustafa. Ik volg de opleiding <br />
             Software Developer en heb al veel ervaring <br />
@@ -20,12 +21,11 @@ function About() {
             Daarnaast heb ik ook gewerkt met Figma <br />
             en een app ontworpen.          </p>
         </section>
-
         <section className="sag">
           <img src="/Screenshot.png" alt="Mustafa" />
         </section>
       </section>
-
+        <h1 className="h2sa"> Meer over mij ↓ </h1>
       <section className="vaardigheden">
         <h2 className="vaardig">Mijn vaardigheden</h2>
 

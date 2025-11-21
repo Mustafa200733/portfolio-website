@@ -3,11 +3,13 @@ import Footer from "../Components/Footer";
 import skillsData from "../Data/skills";
 
 function About() {
-  const [selectedSkill, setSelectedSkill] = useState(null);
-  const [skills, setSkills] = useState(skillsData);
+  const [selectedSkill, setSelectedSkill] = useState(null);   // Gekozen vaardigheid
+  const [skills, setSkills] = useState(skillsData);           // Lijst met skills uit data
 
   return (
     <div className="page-container">
+
+     { /* Over mij sectie */}
       <section className="ana">
         <section className="sol">
           <h1>Over mij</h1>
@@ -19,21 +21,29 @@ function About() {
             JavaScript en Python. <br />
             <br />
             Daarnaast heb ik ook gewerkt met Figma <br />
-            en een app ontworpen.          </p>
+            en een app ontworpen.
+          </p>
         </section>
+
+       
         <section className="sag">
           <img src="/Screenshot.png" alt="Mustafa" />
         </section>
       </section>
-        <h1 className="h2sa"> Meer over mij ↓ </h1>
+
+     
+      <h1 className="h2sa">Meer over mij ↓</h1>
+
+     
       <section className="vaardigheden">
         <h2 className="vaardig">Mijn vaardigheden</h2>
 
+        
         <div className="skills-list">
           {skills.map((skill) => (
             <button
-              key={skill.name}
-              onClick={() => setSelectedSkill(skill)}
+              key={skill.name}                        // Unieke key
+              onClick={() => setSelectedSkill(skill)} // Skill selecteren
               className={`skill-btn ${
                 selectedSkill?.name === skill.name ? "active" : ""
               }`}
@@ -43,6 +53,7 @@ function About() {
           ))}
         </div>
 
+       { /* Extra info over gekozen skill */}
         {selectedSkill && (
           <div className="skill-info">
             <h3>{selectedSkill.name}</h3>
@@ -51,32 +62,40 @@ function About() {
         )}
       </section>
 
+   
       <section className="contact">
         <h2 className="h2ab">Contact & Links</h2>
         <ul className="ulab">
+
+         
           <li>
             <a
               href="https://github.com/users/Mustafa200733/projects/1/views/1?pane=issue&itemId=136254815&issue=Mustafa200733%7Cportfolio-website%7C11"
               target="_blank"
               rel="noreferrer"
             >
-             <p className="pgit"> GitHub</p>
+              <p className="pgit">GitHub</p>
             </a>
           </li>
+
+       
           <li>
             <a
               href="https://www.linkedin.com/in/mustafa-okur-aab40438a/"
               target="_blank"
               rel="noreferrer"
             >
-             <p className="pli"> LinkedIn </p>
+              <p className="pli">LinkedIn</p>
             </a>
           </li>
+
+      
           <li>
             <a href="/sc.png" download>
-             <p className="po"> Download mijn CV</p>
+              <p className="po">Download mijn CV</p>
             </a>
           </li>
+
         </ul>
       </section>
 

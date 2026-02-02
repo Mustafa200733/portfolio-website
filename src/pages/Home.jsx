@@ -17,10 +17,10 @@ const Home = () => {
           </p>
         </section>
         <section className="image-content">
-          <img src="/Mustafa.jpg" alt="" />
+          <img src="Mustafa.jpg" alt="" />
         </section>
       </section>
-      <Footer image="/public/home-banner.png" />
+      <Footer image="home-banner.png" />
     </div>
   );
 };

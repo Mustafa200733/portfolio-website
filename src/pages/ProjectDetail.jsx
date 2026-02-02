@@ -23,23 +23,18 @@ const ProjectDetail = () => {
 
   return (
     <section>
-      {/* Extra ruimte bovenaan */}
       <br /><br /><br /><br /><br />
 
-      {/* Terugknop */}
       <button className='btntr' onClick={() => navigate(-1)}>
         ← Terug
       </button>
 
-      {/* Projecttitel en beschrijving */}
       <h2 className='h2p'>{project.name}</h2>
       <p>{project.description}</p>
 
-      {/* Afbeelding van het project */}
-      <img className='alleim' src={project.image} alt="" />          
+      <img className='alle3im' src={project.image} alt="" />          
 
-      {/* Footer met afbeelding */}
-      <Footer image="/public/Project.png" />
+      <Footer image="Project.png" />
     </section>
   );
 };

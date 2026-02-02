@@ -9,28 +9,20 @@ import Projects from './pages/Projects';
 
 function App() {
   return (
-    // BrowserRouter zorgt ervoor dat React routing kan gebruiken
-    <BrowserRouter  basename="/portfolio-react/">
+    <BrowserRouter  basename="/portfolio-website/">
       
-      /* Routes bevat alle mogelijke URL-routes */
       <Routes>
 
-        /* Hoofdroute met Navbar als layout */
         <Route path="/" element={<Navbar />}>
 
-          /* Standaardpagina voor "/" */
           <Route index element={<Home />} />
 
-          /* Over mij pagina */
           <Route path="About" element={<About />} />
 
-          /* Detailpagina voor een specifiek project, bv /project/3 */
           <Route path="/project/:id" element={<ProjectDetail />} />
 
-          /* Overzicht van alle projecten */
           <Route path="Projects" element={<Projects />} />
 
-          /* Contactpagina */
           <Route path="Contact" element={<Contact />} />
 
         </Route>

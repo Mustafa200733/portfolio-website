@@ -4,20 +4,20 @@ nav {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem; 
-  background: inherit; 
+  padding: 0.5rem 1rem;
+  background: inherit;
   z-index: 1000;
   background-color: white;
-    border-style: ridge;
+  border-style: ridge;
   font-family: "Tenor Sans", sans-serif;
   height: 5%;
 }
 
 nav ul {
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,13 +34,11 @@ nav a {
   padding: 0.25rem 0.5rem;
 }
 
-
 .TextNavbar {
   font-weight: bold;
   position: absolute;
   top: 45%;
 }
-
 
 .page-container {
   min-height: 100vh;
@@ -59,9 +57,8 @@ nav a {
   margin-bottom: 10%;
   font-size: 5.1rem;
   top: 20%;
-  margin-top: 20px;
+  margin-top: 110px;
 }
-
 
 .home-container {
   width: 100vw;
@@ -69,33 +66,29 @@ nav a {
 }
 
 .OnderAfbeelding {
-  width: 100vw;       /* Gebruik 100vw zodat het echt de volledige breedte beslaat */
-  max-width: 100%;    /* Voorkomt horizontale scrollbars */
-  height: 50vh;       /* Hoogte blijft de helft van het scherm */
- }
-
-
+  width: 100vw; /* Gebruik 100vw zodat het echt de volledige breedte beslaat */
+  max-width: 100%; /* Voorkomt horizontale scrollbars */
+  height: 50vh; /* Hoogte blijft de helft van het scherm */
+}
 
 .info-content p {
-    color: #000;
+  color: #000;
   font-size: 1.5rem;
   font-weight: bold;
-    width: 88%;
-    padding: 20px;
-
+  width: 88%;
+  padding: 20px;
 }
 
-
-.h2sa{
-    color: #000;
-    font-size: 4.5rem;
-    top: 35%;
-    width: 45%;
-    padding: 20px;
-    position: absolute;
+.h2sa {
+  color: #000;
+  font-size: 4.5rem;
+  top: 25%;
+  width: 45%;
+  padding: 20px;
+  position: absolute;
 }
 
-.info-content  {
+.info-content {
   width: 54%;
   display: flex;
   justify-content: center;
@@ -130,9 +123,6 @@ nav a {
   flex-direction: center;
 }
 
-
-
-
 .ana {
   height: 90vh;
   width: 100vw;
@@ -145,70 +135,63 @@ nav a {
 
 .sol h1 {
   color: #000;
-  margin: -50px 0 1rem 0; 
+  margin: -50px 0 1rem 0;
   margin-bottom: 10%;
   font-size: 5.1rem;
   position: absolute;
-  top: 11%;
+  top: 7%;
   width: 45%;
 }
 
-
-.sol p{
-    color: #000;
+.sol p {
+  color: #000;
   font-size: 1.5rem;
   font-weight: bold;
-  width: 82%;
+  width: 87%;
 }
 
-
-.ulab{
-  gap: 2rem; 
+.ulab {
+  gap: 2rem;
   list-style: none;
   align-items: center;
-    display: flex;
-
+  display: flex;
 }
-.pgit{
+.pgit {
   color: blue;
-    font-size: 2.1rem;
-
+  font-size: 2.1rem;
 }
 
-.pli{
+.pli {
   color: grey;
-    font-size: 2.1rem;
-
+  font-size: 2.1rem;
 }
-.po{
+.po {
   color: green;
   font-size: 2.1rem;
 }
 
-.h2ab{
- color: black;
-  font-size: 4.1rem;
-  padding: 20px;
-}
-
-.vaardig{
+.h2ab {
   color: black;
   font-size: 4.1rem;
   padding: 20px;
-  
 }
-.vaardigheden{
-   color: black;
+
+.vaardig {
+  color: black;
+  font-size: 4.1rem;
+  padding: 20px;
+}
+.vaardigheden {
+  color: black;
   font-size: 2.1rem;
-
 }
 
-.contact-home p{
-     color: #000;
-    font-size: 2.5rem;
-    font-weight: bold;
-    width: 88%;
-    padding: 20px;
+.contact-home p {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 88%;
+  padding: 20px;
 }
 .imgtoets {
   width: 35%;
@@ -216,34 +199,26 @@ nav a {
   margin-top: -950px; /* pas aan tot het goed staat */
 }
 
-
-
-
-
-.imgfit{
-    width: 35%;
-
+.imgfit {
+  width: 35%;
 }
 
-
-
-.contact-links h1{
+.contact-links h1 {
   color: black;
   padding: 10px;
 }
 
-.contact-links img{
+.contact-links img {
   width: 10%;
   padding: 20px;
 }
 
-
-  section.projects-container {
-  display: flex;                /* Zet alles naast elkaar */
-  justify-content: center;      /* Centreer alles horizontaal */
-  align-items: flex-start;      /* Begin alle items bovenaan uitgelijnd */
-  gap: 2rem;                    /* Ruimte tussen de kaarten */
-  padding: 2rem;                /* Ruimte rondom de sectie */
+section.projects-container {
+  display: flex; /* Zet alles naast elkaar */
+  justify-content: center; /* Centreer alles horizontaal */
+  align-items: flex-start; /* Begin alle items bovenaan uitgelijnd */
+  gap: 2rem; /* Ruimte tussen de kaarten */
+  padding: 2rem; /* Ruimte rondom de sectie */
   width: 100%;
   box-sizing: border-box;
 }
@@ -254,20 +229,22 @@ nav a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 300px;                 /* Elke kaart 300px breed */
-  background-color: #f9f9f9;    /* Lichte achtergrond */
+  width: 300px; /* Elke kaart 300px breed */
+  background-color: #f9f9f9; /* Lichte achtergrond */
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-body{
+body {
   background-color: blueviolet;
 }
 
@@ -282,47 +259,55 @@ body{
   color: #555;
 }
 
-.h2pronam{
+.h2pronam {
   padding: 25px;
 }
 
-.alleim{
+.alleim {
   position: absolute;
-height: 100vh;
-width: 100vw ;
+  height: 100vh;
+  width: 100vw;
 }
 
-.ima3e{
+.alle3im {
+  width: 80%;
+  height: auto;
+}
+
+.ima3e {
   width: 633px;
   height: 600px;
   object-fit: cover;
 }
 
-.bttn2{
+.bttn2 {
   color: blueviolet;
   position: absolute;
-top: 47%;
+  top: 47%;
 }
 
-p{
+p {
   color: #000;
   font-size: 2.5rem;
-    font-weight: bold;
-
-}
-
-.h2p{
-    font-size: 2.5rem;
-color: black;
   font-weight: bold;
-
 }
 
-.btntr{
-color: black;
-font-size: 2rem;
-
+.h2p {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
 }
-.contact-links img{
-display: flex;
+
+.btntr {
+  color: black;
+  font-size: 2rem;
+}
+.contact-links img {
+  display: flex;
+}
+
+.image {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
 }

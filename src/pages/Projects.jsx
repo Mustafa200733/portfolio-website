@@ -16,7 +16,6 @@ const Projects = () => {
 
   return (
     <>
-      /* Container voor alle projectkaarten */
       <section className="projects-container">
         {ProjectList.map((project) => (
           <ProjectCard
@@ -27,7 +26,7 @@ const Projects = () => {
         ))}
       </section>
 
-°      <Footer image="/public/Project.png" />
+      <Footer image="Project.png" />
     </>
   );
 };

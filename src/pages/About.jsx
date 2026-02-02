@@ -27,7 +27,7 @@ function About() {
 
        
         <section className="sag">
-          <img src="/Screenshot.png" alt="Mustafa" />
+          <img src="Screenshot.png" alt="Mustafa" />
         </section>
       </section>
 
@@ -70,7 +70,7 @@ function About() {
          
           <li>
             <a
-              href="https://github.com/users/Mustafa200733/projects/1/views/1?pane=issue&itemId=136254815&issue=Mustafa200733%7Cportfolio-website%7C11"
+              href="https://github.com/Mustafa200733"
               target="_blank"
               rel="noreferrer"
             >
@@ -99,7 +99,7 @@ function About() {
         </ul>
       </section>
 
-      <Footer image="/public/Overmij.png" />
+      <Footer image="Overmij.png" />
     </div>
   );
 }

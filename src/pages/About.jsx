@@ -15,13 +15,9 @@ function About() {
           <h1>Over mij</h1>
           
           <p>
-            Hallo, ik ben Mustafa. Ik volg de opleiding <br />
-            Software Developer en heb al veel ervaring <br />
-            met programmeren in HTML, CSS, PHP, SQL, <br />
-            JavaScript en Python. <br />
-            <br />
-            Daarnaast heb ik ook gewerkt met Figma <br />
-            en een app ontworpen.
+            Ik volg de opleiding Software Developer en werk graag aan projecten
+            die mijn skills uitdagen. Klik op een vaardigheid hieronder om de
+            uitleg te zien.
           </p>
         </section>
 
@@ -32,10 +28,10 @@ function About() {
       </section>
 
      
-      <h1 className="h2sa">Meer over mij ↓</h1>
+      <h2 className="h2sa">Meer over mij↓</h2>
 
      
-      <section className="vaardigheden">
+      <section className="vaardigheden section-block">
         <h2 className="vaardig">Mijn vaardigheden</h2>
 
         
@@ -63,7 +59,7 @@ function About() {
       </section>
 
    
-      <section className="contact">
+      <section className="contact section-block">
         <h2 className="h2ab">Contact & Links</h2>
         <ul className="ulab">
 
@@ -99,9 +95,12 @@ function About() {
         </ul>
       </section>
 
-      <Footer image="Overmij.png" />
+      <Footer image="home-banner.png" />
     </div>
   );
 }
 
 export default About;
+
+
+

@@ -1,33 +1,39 @@
 const skills = [
   {
     name: "HTML",
-    description: "Ik kan webpagina’s maken met HTML.",
+    description: "Ik ben goed in HTML en kan nette, semantische paginas bouwen die logisch zijn opgebouwd. Ik let op structuur en toegankelijkheid zodat content duidelijk is.",
   },
   {
     name: "CSS",
-    description: "Ik kan websites mooi maken met kleuren en opmaak.",
+    description:
+      "Met CSS maak ik layouts die strak en responsief zijn. Ik speel graag met spacing, typografie en stijl om een mooie uitstraling te creeren.",
   },
-  {
-    name: "PHP",
-    description: "Ik heb geleerd hoe ik met PHP websites dynamisch kan maken.",
-  },
+
   {
     name: "SQL",
-    description: "Ik kan gegevens opslaan en ophalen uit een database.",
+    description:
+      "Ik kan met SQL data opvragen en tabellen beheren. Ik begrijp hoe je relaties gebruikt om informatie overzichtelijk te houden.",
   },
   {
     name: "JavaScript",
-    description: "Ik gebruik JavaScript om websites interactief te maken.",
+    description:
+      "Met JavaScript maak ik paginas interactief. Ik kan functionaliteit bouwen zoals filters, knoppen en dynamische content.",
   },
   {
     name: "Python",
-    description: "Ik kan met Python kleine programma’s maken.",
+    description:
+      "In Python heb ik ervaring met kleine scripts en basis logica. Het is een taal waarin ik graag verder groei.",
   },
   {
     name: "Figma",
-    description: "Ik heb met Figma gewerkt om een app te ontwerpen.",
+    description:
+      "Ik heb gewerkt met Figma om een app te ontwerpen en ideeen visueel uit te werken. Dit helpt bij het plannen van een strakke UI.",
+  },
+  {
+    name: "React",
+    description:
+      "Met React kan ik componenten bouwen en mijn UI logisch opdelen. Ik werk met props en state om pagina's dynamisch en overzichtelijk te houden.",
   },
 ];
 
 export default skills;
-

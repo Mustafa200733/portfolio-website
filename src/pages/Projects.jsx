@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import skills from "../Data/skills.js"; // (Lijkt niet gebruikt, kan eventueel weg)
 import { useNavigate } from "react-router";
 import Footer from "../Components/Footer.jsx";
 import projects from "../data/projects.js";
@@ -15,7 +14,8 @@ const Projects = () => {
   };
 
   return (
-    <>
+    <div className="page-wrapper">
+      <h1 className="projects-title">Projecten</h1>
       <section className="projects-container">
         {ProjectList.map((project) => (
           <ProjectCard
@@ -26,8 +26,8 @@ const Projects = () => {
         ))}
       </section>
 
-      <Footer image="Project.png" />
-    </>
+      <Footer className="ftpr" image="home-banner.png" />
+    </div>
   );
 };
 

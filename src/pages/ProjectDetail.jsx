@@ -10,6 +10,9 @@ const ProjectDetail = () => {
   
   // Zoek het juiste project o.b.v. het ID
   const project = projectList.find(a => a.id === Number(id))
+  const imageSrc = project
+    ? `${import.meta.env.BASE_URL}${String(project.image).replace(/^\//, "")}`
+    : "";
 
   // Als project niet bestaat → foutmelding
   if (!project) {
@@ -32,9 +35,9 @@ const ProjectDetail = () => {
       <h2 className='h2p'>{project.name}</h2>
       <p>{project.description}</p>
 
-      <img className='alle3im' src={project.image} alt="" />          
+      <img className='alle3im' src={imageSrc} alt={project.name} />          
 
-      <Footer image="Project.png" />
+      <Footer image="home-banner.png" />
     </section>
   );
 };

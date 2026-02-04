@@ -1,11 +1,14 @@
-const Footer = ({image}) => {
-    return ( 
-        
-       <footer className="footer">
+const Footer = ({ image }) => {
+  const imageSrc = `${import.meta.env.BASE_URL}${String(image).replace(
+    /^\//,
+    ""
+  )}`;
 
-        <img className="OnderAfbeelding" src={image} alt="" />
-      </footer>
-     );
-}
+  return (
+    <footer className="footer">
+      <img className="OnderAfbeelding" src={imageSrc} alt="" />
+    </footer>
+  );
+};
  
 export default Footer;

@@ -1,7 +1,7 @@
 const skills = [
   {
     name: "HTML",
-    description: "Ik ben goed in HTML en kan nette, semantische paginas bouwen die logisch zijn opgebouwd. Ik let op structuur en toegankelijkheid zodat content duidelijk is.",
+    description: "Ik ben goed in HTML en kan nette paginas bouwen die logisch zijn opgebouwd. Ik let op structuur en toegankelijkheid zodat content duidelijk is.",
   },
   {
     name: "CSS",

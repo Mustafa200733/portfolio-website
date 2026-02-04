@@ -20,7 +20,7 @@ const Contact = () => {
             <img src="tel.png" alt="" />
             <div>
               <p className="contact-label">Telefoon</p>
-              <a className="contact-value" href="tel:0610451897">0610451897</a>
+              <a className="contact-value" href="tel:06">0622496205</a>
             </div>
           </div>
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Mustafa200733/portfolio-website",
+  "homepage": "https://mustafa200733.github.io/portfolio-website/",
 
   "scripts": {
     "dev": "vite",

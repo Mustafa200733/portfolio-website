@@ -4,6 +4,7 @@ import skillsData from "../data/skills";
 
 function About() {
   const [selectedSkill, setSelectedSkill] = useState(skillsData[0]);
+  const cvDownloadLink = `${import.meta.env.BASE_URL}mustafa-okur-cv-2026.pdf`;
 
   return (
     <div className="page-container reveal">
@@ -72,7 +73,7 @@ function About() {
               </a>
             </li>
             <li>
-              <a className="about-link" href="/sc.png" download>
+              <a className="about-link" href={cvDownloadLink} download>
                 Download mijn cv
               </a>
             </li>

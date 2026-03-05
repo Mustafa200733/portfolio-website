@@ -25,6 +25,11 @@ const skills = [
       "In Python heb ik ervaring met kleine scripts en basis logica. Het is een taal waarin ik graag verder groei.",
   },
   {
+    name: "PHP",
+    description:
+      "Met PHP kan ik server-side functionaliteit bouwen, formulieren verwerken en data uit een database ophalen voor dynamische websites.",
+  },
+  {
     name: "Figma",
     description:
       "Ik heb gewerkt met Figma om een app te ontwerpen en ideeen visueel uit te werken. Dit helpt bij het plannen van een strakke UI.",

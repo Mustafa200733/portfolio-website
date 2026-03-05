@@ -1,34 +1,37 @@
-import React, { useState } from "react";
+﻿import { useState } from "react";
 import { useNavigate } from "react-router";
 import Footer from "../Components/Footer.jsx";
 import projects from "../data/projects.js";
 import ProjectCard from "../Components/ProjectCard";
 
 const Projects = () => {
-  const navigate = useNavigate();                // Om naar detailpagina te navigeren
-  const [ProjectList, setProjectList] = useState(projects); // Lijst met projecten
+  const navigate = useNavigate();
+  const [projectList] = useState(projects);
 
-  // Navigeren naar het projectdetail (met ID)
   const goToDetail = (id) => {
     navigate(`/project/${id}`);
   };
 
   return (
-    <div className="page-wrapper">
-      <h1 className="projects-title">Projecten</h1>
+    <div className="page-wrapper reveal">
+      <header className="projects-header">
+        <h1 className="projects-title">Projecten</h1>
+        <p className="projects-subtitle">
+          Een selectie van projecten waarin ik ontwerp, front-end en structuur combineer.
+          Klik op een project voor meer details.
+        </p>
+      </header>
+
       <section className="projects-container">
-        {ProjectList.map((project) => (
-          <ProjectCard
-            key={project.id}               // Unieke key voor React
-            project={project}              // Projectgegevens doorgeven aan de kaart
-            onShowDetail={goToDetail}      // Functie om naar de detailpagina te gaan
-          />
+        {projectList.map((project) => (
+          <ProjectCard key={project.id} project={project} onShowDetail={goToDetail} />
         ))}
       </section>
 
-      <Footer className="ftpr" image="home-banner.png" />
+      <Footer />
     </div>
   );
 };
 
 export default Projects;
+

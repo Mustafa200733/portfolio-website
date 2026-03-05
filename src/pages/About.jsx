@@ -1,106 +1,89 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import Footer from "../Components/Footer";
-import skillsData from "../Data/skills";
+import skillsData from "../data/skills";
 
 function About() {
-  const [selectedSkill, setSelectedSkill] = useState(null);   // Gekozen vaardigheid
-  const [skills, setSkills] = useState(skillsData);           // Lijst met skills uit data
+  const [selectedSkill, setSelectedSkill] = useState(skillsData[0]);
 
   return (
-    <div className="page-container">
-
-     { /* Over mij sectie */}
-      <section className="ana">
+    <div className="page-container reveal">
+      <section className="ana about-hero">
         <section className="sol">
-          <h1>Over mij</h1>
-          
+          <p className="hero-badge">Over mij</p>
+          <h1>Ik combineer designgevoel met code.</h1>
           <p>
-            Ik volg de opleiding Software Developer en werk graag aan projecten
-            die mijn skills uitdagen. Klik op een vaardigheid hieronder om de
-            uitleg te zien.
+            Ik volg de opleiding Software Developer en werk aan projecten die
+            zowel technisch sterk als visueel duidelijk moeten zijn.
           </p>
+
+          <ul className="about-highlights">
+            <li>Praktisch gebouwd met React en JavaScript</li>
+            <li>Focus op nette structuur en responsive layout</li>
+            <li>Steeds verbeteren op basis van feedback</li>
+          </ul>
         </section>
 
-       
         <section className="sag">
-          <img src="Screenshot.png" alt="Mustafa" />
+          <div className="about-portrait-card">
+            <img src="Screenshot.png" alt="Mustafa werkt aan code" />
+            <p>Frontend student met focus op gebruiksvriendelijke UI.</p>
+          </div>
         </section>
       </section>
 
-     
-      <h2 className="h2sa">Meer over mij↓</h2>
+      <section className="about-panels section-block">
+        <article className="about-panel">
+          <h2 className="vaardig">Mijn vaardigheden</h2>
 
-     
-      <section className="vaardigheden section-block">
-        <h2 className="vaardig">Mijn vaardigheden</h2>
+          <div className="skills-list">
+            {skillsData.map((skill) => (
+              <button
+                key={skill.name}
+                onClick={() => setSelectedSkill(skill)}
+                className={`skill-btn ${selectedSkill?.name === skill.name ? "active" : ""}`}
+              >
+                {skill.name}
+              </button>
+            ))}
+          </div>
 
-        
-        <div className="skills-list">
-          {skills.map((skill) => (
-            <button
-              key={skill.name}                        // Unieke key
-              onClick={() => setSelectedSkill(skill)} // Skill selecteren
-              className={`skill-btn ${
-                selectedSkill?.name === skill.name ? "active" : ""
-              }`}
-            >
-              {skill.name}
-            </button>
-          ))}
-        </div>
-
-       { /* Extra info over gekozen skill */}
-        {selectedSkill && (
           <div className="skill-info">
             <h3>{selectedSkill.name}</h3>
             <p>{selectedSkill.description}</p>
           </div>
-        )}
+        </article>
+
+        <article className="about-panel">
+          <h2 className="h2ab">Contact en links</h2>
+          <ul className="about-contact-list">
+            <li>
+              <a className="about-link" href="https://github.com/Mustafa200733" target="_blank" rel="noreferrer">
+                GitHub profiel
+              </a>
+            </li>
+            <li>
+              <a
+                className="about-link"
+                href="https://www.linkedin.com/in/mustafa-okur-aab40438a/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn profiel
+              </a>
+            </li>
+            <li>
+              <a className="about-link" href="/sc.png" download>
+                Download mijn cv
+              </a>
+            </li>
+          </ul>
+        </article>
       </section>
 
-   
-      <section className="contact section-block">
-        <h2 className="h2ab">Contact & Links</h2>
-        <ul className="ulab">
-
-         
-          <li>
-            <a
-              href="https://github.com/Mustafa200733"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="pgit">GitHub</p>
-            </a>
-          </li>
-
-       
-          <li>
-            <a
-              href="https://www.linkedin.com/in/mustafa-okur-aab40438a/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <p className="pli">LinkedIn</p>
-            </a>
-          </li>
-
-      
-          <li>
-            <a href="/sc.png" download>
-              <p className="po">Download mijn CV</p>
-            </a>
-          </li>
-
-        </ul>
-      </section>
-
-      <Footer image="home-banner.png" />
+      <Footer />
     </div>
   );
 }
 
 export default About;
-
-
 

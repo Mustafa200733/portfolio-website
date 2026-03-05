@@ -1,5 +1,5 @@
-const Skills = () => {
-    return (  );
-}
- 
+﻿const Skills = () => {
+  return null;
+};
+
 export default Skills;

@@ -23,17 +23,6 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="hero-metrics">
-            <div className="metric-card">
-              <strong>3+</strong>
-              <span>Portfolio projecten</span>
-            </div>
-            <div className="metric-card">
-              <strong>7</strong>
-              <span>Technieken geoefend</span>
-            </div>
-          </div>
-        </section>
 
         <section className="image-content">
           <img src="Mustafa.jpg" alt="Portret van Mustafa" />

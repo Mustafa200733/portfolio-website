@@ -19,7 +19,11 @@ export default function createProjectCard(project) {
   const button = createElement("a", {
     text: "Bekijk project",
     className: "project-button",
-    attrs: { href: `#project-${project.id}` },
+    attrs: {
+      href: project.url || `#project-${project.id}`,
+      target: project.url ? "_blank" : undefined,
+      rel: project.url ? "noreferrer" : undefined,
+    },
   });
 
   return createElement("article", {

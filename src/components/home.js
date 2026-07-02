@@ -64,7 +64,6 @@ export default function createHome() {
     },
   });
 
-  imageCard.appendChild(cardMark);
   imageCard.appendChild(image);
   rightColumn.appendChild(imageCard);
 

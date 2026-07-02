@@ -46,7 +46,7 @@ const skills = [
 const contactLinks = [
   { text: "GitHub profiel", href: "https://github.com/Mustafa200733", external: true },
   { text: "LinkedIn profiel", href: "https://www.linkedin.com/in/mustafa-okur-aab40438a/", external: true },
-  { text: "Download mijn cv", href: "./mustafa-okur-cv-2026.pdf", download: true },
+  { text: "Download mijn cv", href: "./Mustafa_Okur_FlowCV_Resume_2026-07-02.pdf", download: true },
 ];
 
 export default function createAboutExtras() {

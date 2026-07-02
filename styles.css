@@ -231,11 +231,10 @@ a {
 
 
 .hero-image {
-    width: min(272px,100%);
+    width: min(282px,100%);
     aspect-ratio: 1 / 1.08;
     object-fit: cover;
-    filter: grayscale(100%);
-    display: block
+    display: block              
 }
 
 .section-label {
@@ -340,9 +339,6 @@ a {
 .project-image,
 .project-detail-image {
     width: 100%;
-    display: block;
-    object-fit: cover;
-    filter: grayscale(100%)
 }
 
 .about-image,

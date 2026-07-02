@@ -41,32 +41,10 @@ export default function createHome() {
     children: [primaryButton, secondaryButton],
   });
 
-  const stat1 = createElement("div", {
-    className: "stat-card",
-    children: [
-      createElement("div", { text: "3+", className: "stat-value" }),
-      createElement("div", { text: "Portfolio projecten", className: "stat-label" }),
-    ],
-  });
-
-  const stat2 = createElement("div", {
-    className: "stat-card",
-    children: [
-      createElement("div", { text: "7", className: "stat-value" }),
-      createElement("div", { text: "Technieken geoefend", className: "stat-label" }),
-    ],
-  });
-
-  const statsContainer = createElement("div", {
-    className: "hero-stats",
-    children: [stat1, stat2],
-  });
-
   leftColumn.appendChild(label);
   leftColumn.appendChild(heading);
   leftColumn.appendChild(description);
   leftColumn.appendChild(buttonsContainer);
-  leftColumn.appendChild(statsContainer);
 
   // Right column
   const rightColumn = createElement("div", {
@@ -84,7 +62,10 @@ export default function createHome() {
 
   const image = createElement("img", {
     className: "hero-image",
-    attrs: { src: "./Mustafa.jpg", alt: "Mustafa aan het werk" },
+    attrs: {
+      src: "./Mustafa.jpg",
+      alt: "Mustafa aan het werk",
+    },
   });
 
   imageCard.appendChild(cardMark);

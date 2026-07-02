@@ -55,10 +55,6 @@ export default function createHome() {
     className: "hero-image-card",
   });
 
-  const cardMark = createElement("span", {
-    text: "✎",
-    className: "hero-card-mark",
-  });
 
   const image = createElement("img", {
     className: "hero-image",

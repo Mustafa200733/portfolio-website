@@ -228,17 +228,7 @@ a {
     box-shadow: 0 36px 70px rgba(24,33,29,.18)
 }
 
-.hero-card-mark {
-    position: absolute;
-    top: 42px;
-    right: 45px;
-    color: #0d0f0e;
-    font-family: Playfair Display,Times New Roman,serif;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1;
-    transform: rotate(-42deg)
-}
+
 
 .hero-image {
     width: min(272px,100%);
